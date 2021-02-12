@@ -15,6 +15,11 @@ verifier:
   name: inspec
 
 platforms:
+- name: windows-7
+  driver:
+    image: dokken/windows-7
+    pid_one_command: /bin/systemd
+    
 - name: centos-7
   driver:
     image: dokken/centos-7
@@ -39,4 +44,8 @@ platforms:
 - name: ubuntu-18.04
   driver:
     image: dokken/ubuntu-18.04
+    pid_one_command: /bin/systemd
+ - name: ubuntu-20.04
+  driver:
+    image: dokken/ubuntu-20.04
     pid_one_command: /bin/systemd
