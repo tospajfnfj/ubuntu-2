@@ -26,7 +26,12 @@ platforms:
     pid_one_command: /usr/lib/systemd/systemd
 
 
-- name: ubuntu-12.04
+- name: ubuntu-01.04
+  driver:
+    image: dokken/ubuntu-01.04
+    pid_one_command: /usr/lib/systemd/systemd
+    
+    - name: ubuntu-12.04
   driver:
     image: dokken/ubuntu-12.04
     pid_one_command: /usr/lib/systemd/systemd
